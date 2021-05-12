@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Willberries</title>
+	<title>Maidlberries</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -30,22 +30,22 @@
 				<nav>
 					<ul class="navigation d-flex justify-content-around">
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="gender">Womens</a>
+							<a href="#body" class="navigation-link navigation-links" data-field="gender">Womens</a>
 						</li>
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="gender">Mens</a>
+							<a href="#body" class="navigation-link navigation-links" data-field="gender">Mens</a>
 						</li>
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="category">Clothing</a>
+							<a href="#body" class="navigation-link navigation-links" data-field="category">Clothing</a>
 						</li>
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="category">Accessories</a>
+							<a href="#body" class="navigation-link navigation-links" data-field="category">Accessories</a>
 						</li>
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="category">Shoes</a>
+							<a href="#body" class="navigation-link navigation-links" data-field="category">Shoes</a>
 						</li>
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" >All</a>
+							<a href="#body" class="navigation-link allfill" data-field="label">All</a>
 						</li>
 
 					</ul>
@@ -148,9 +148,12 @@
 				<div class="card card-1 mb-4">
 					<h3 class="card-title">Fashion Month Ready in Capital Shop</h3>
 					<p class="card-text">Bags & Acsessories & Lingerie & Sportswear & Beauty & Swimwear</p>
-					<button class="button">
+					<button class="button fashion">
+						<a href="#body" style="text-decoration: none;  color: white;">
+						
+						
 						<span class="button-text">View all</span>
-						<img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
+						<img src="img/arrow.svg" alt="icon: arrow" class="button-icon"></a>
 					</button>
 				</div>
 				<!-- /.card -->
@@ -160,9 +163,12 @@
 				<div class="card card-2 mb-4">
 					<h3 class="card-title text-light">Catch the Sun: Spring Break Styles From $5.99</h3>
 					<p class="card-text text-light">Sweaters & Hoodies & Puffer Jackets & Coats and Jackets & Knit</p>
-					<button class="button">
+					<button class="button shoeses">
+						<a href="#body" style="text-decoration: none;  color: white;">
+						
 						<span class="button-text">View all</span>
-						<img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
+						<img src="img/arrow.svg" alt="icon: arrow" class="button-icon"></a>
+						
 					</button>
 				</div>
 				<!-- /.card -->
@@ -201,7 +207,7 @@
 			</div>
 			<!-- /.col-9 -->
 			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">View All</a>
+				<a href="#body" class="more">View All</a>
 			</div>
 			<!-- /.col-3 -->
 		</div>
@@ -563,12 +569,41 @@
 				</tr>
 				</thead>
 				<tbody class="cart-table__goods">
-				
+				<tr class="cart-item" data-id="003">
+					<td>Sweater</td>
+					<td>250$</td>
+					<td><button class="cart-btn-minus">-</button></td>
+					<td>2</td>
+					<td><button class="cart-btn-plus">+</button></td>
+					<td>500$</td>
+					<td><button class="cart-btn-delete">x</button></td>
+				</tr>
+				<tr class="cart-item" data-id="003">
+					<td>Sweater</td>
+					<td>250$</td>
+					<td><button class="cart-btn-minus">-</button></td>
+					<td>2</td>
+					<td><button class="cart-btn-plus">+</button></td>
+					<td>500$</td>
+					<td><button class="cart-btn-delete">x</button></td>
+				</tr>
+				<tr class="cart-item" data-id="003">
+					<td>Sweater</td>
+					<td>250$</td>
+					<td><button class="cart-btn-minus">-</button></td>
+					<td>2</td>
+					<td><button class="cart-btn-plus">+</button></td>
+					<td>500$</td>
+					<td><button class="cart-btn-delete">x</button></td>
+				</tr>
+
+
+
 				</tbody>
 				<tfoot>
 				<tr>
 					<th colspan="5">Total:</th>
-					<th class="card-table__total" colspan="2">10000$</th>
+					<th class="card-table__total" colspan="2">1500$</th>
 				</tr>
 
 				</tfoot>
@@ -576,8 +611,12 @@
 			<form class="modal-form" action="">
 				<input class="modal-input" type="text" placeholder="Имя" name="nameCustomer">
 				<input class="modal-input" type="text" placeholder="Телефон" name="phoneCustomer">
-				<button class="button cart-buy" type="submit">
+				<button class="button cart-buy">
 					<span class="button-text">Checkout</span>
+				</button>
+				<br>
+				<button class="button cart-buy cart-clear" type="submit">
+					<span class="button-text">Clear</span>
 				</button>
 			</form>
 		</div>
